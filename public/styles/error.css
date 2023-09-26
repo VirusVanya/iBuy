@@ -1,0 +1,33 @@
+/* Main */
+
+main .error-block {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    height: 500px;
+    padding: 40px 8%;
+    align-items: center;
+    justify-content: start;
+}
+
+main .error-block .text {
+    font-size: 110px;
+    font-weight: 500;
+    margin: 50px 0px 40px 0px;
+}
+
+main .error-block p {
+    margin-bottom: 120px;
+}
+
+main .error-block a span {
+    padding: 20px;
+    color: white;
+    background-color: rgb(231, 34, 34);
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+main .error-block a span:hover {
+    border-radius: 10px;
+}

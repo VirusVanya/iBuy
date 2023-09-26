@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('blocks/head') -%>
+    <link rel="stylesheet" href="/styles/error.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <main>
+        <div class="error-block">
+            <p class="text">404 Not Found</p>
+            <p>Your visited page not found. You may go home page.</p>
+            <a href="/"><span>Back to home page</span></a>
+        </div>
+    </main>
+    <%- include('blocks/footer') -%>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

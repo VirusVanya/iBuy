@@ -1,0 +1,65 @@
+/* Main */
+
+main .form-block {
+    display: flex;
+    width: 84%;
+    padding: 40px 8%;
+    align-items: center;
+    justify-content: center;
+}
+
+main .form-block form {
+    position: relative;
+    margin-top: 50px;
+    height: 330px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .form-block form .form-title {
+    font-size: 36px;
+    margin: 0;
+}
+
+main .form-block form .form-info {
+    font-size: 16px;
+    margin: 10px 0px 40px;
+}
+
+main .form-block form input[type=text], input[type=email], input[type=password] {
+    position: relative;
+    margin-bottom: 40px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+}
+
+main .form-block form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .form-block form .form-buttons a:hover {
+    text-decoration: underline;
+}
+
+main .form-block form input[type=submit] {
+    position: relative;
+    border: none;
+    background-color: rgb(231, 34, 34);
+    height: 50px;
+    width: 140px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+main .form-block form input[type=submit]:hover {
+    border-radius: 10px;
+}

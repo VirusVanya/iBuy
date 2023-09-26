@@ -1,0 +1,91 @@
+main .posts-nav {
+    position: relative;
+    width: 84%;
+    padding: 40px 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .posts-nav span {
+    padding: 15px 30px;
+    background-color: rgb(255, 36, 36);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main .posts-nav span ion-icon {
+    font-size: 20px;
+}
+
+main .items-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 84%;
+    padding: 40px 8%;
+    background-color: rgb(197, 197, 197);
+}
+
+main .items-list .item {
+    position: relative;
+    height: 320px;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    cursor: pointer;
+}
+
+main .items-list .item img {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 5%;
+}
+
+main .items-list .item p {
+    margin: 0;
+}
+
+main .items-list .item .item-info {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .items-list .item .item-info .name {
+    font-size: 16px;
+}
+
+main .items-list .item .item-info .time {
+    font-size: 12px;
+}
+
+main .items-list .item .item-price {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+main .items-list .item .item-price .price {
+    font-size: 18px;
+}
+
+main .items-list .item .item-price ion-icon {
+    font-size: 24px;
+}

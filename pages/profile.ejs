@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('blocks/head') -%>
+    <link rel="stylesheet" href="/styles/profile.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <main>
+        <div class="profile">
+            <div class="options">
+                <p class="title">Manage My Account</p>
+                <a href="#">My Profile</a>
+                <a href="#">Address Book</a>
+                <a href="#">My Payment Options</a>
+                <p class="title">My Orders</p>
+                <a href="#">My Returns</a>
+                <a href="#">My Cancellations</a>
+            </div>
+            <div class="profile-block">
+                <div class="picture-block">
+                    <img src="/images/avatar.png" alt="" class="picture">
+                    <span>Upload Photo</span>
+                </div>
+                <div class="data">
+                    <div class="data-block">
+                        <p class="title">Your Name</p>
+                        <div>
+                            <p><%= name %></p>
+                            <span>Edit</span>
+                        </div>
+                    </div>
+                    <div class="data-block">
+                        <p class="title">Phone Number</p>
+                        <div>
+                            <p>+91 49652845732</p>
+                            <span>Edit</span>
+                        </div>
+                    </div>
+                    <div class="data-block">
+                        <p class="title">Email</p>
+                        <div>
+                            <p><%= email %></p>
+                            <span>Edit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('blocks/footer') -%>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

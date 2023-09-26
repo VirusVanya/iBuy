@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('blocks/head') -%>
+    <link rel="stylesheet" href="/styles/add-post.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <main>
+        <div class="add-form">
+            <form action="/add-post" id="post-form" method="post" autocomplete="off" enctype="multipart/form-data">
+                <h3 class="form-title">Add your post</h3>
+                <input type="text" name="name" id="" placeholder="Item name" required>
+                <textarea name="description" id="" placeholder="Item description" required></textarea>
+                <input type="text" name="price" id="" placeholder="Item price (USD)" pattern="[0-9]+" required>
+                <label for="images" class="drop-container" id="dropcontainer">
+                    <span class="drop-title">Drop file here</span>
+                    or
+                    <input type="file" name="image" id="images" accept=".png, .jpg, .jpeg" required>
+                </label>
+                <input type="text" name="location" id="" placeholder="Item location" required>
+                <input type="submit" value="Publish advertisement">
+            </form>
+        </div>
+    </main>
+    <%- include('blocks/footer') -%>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/add-post.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* Main */
+
+main .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84%;
+    height: 60px;
+    padding: 40px 8%;
+}
+
+main .search * {
+    display: flex;
+    align-items: center;
+}
+
+main .search .catalog {
+    padding: 2px 15px;
+    gap: 5px;
+    background-color: rgb(255, 36, 36);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+main .search .catalog:hover {
+    border-radius: 20px;
+}
+
+main .search .catalog ion-icon {
+    font-size: 18px;
+    transition: 0.6s;
+}
+
+main .search .catalog:hover ion-icon {
+    transform: rotate(270deg);
+}
+
+main .search .search-input {
+    padding: 0px 5px 0px 2%;
+    position: relative;
+    justify-content: space-between;
+    width: 66%;
+    height: 100%;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 10px;
+}
+
+main .search .search-input input {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+main .search .search-input span {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    justify-content: center;
+    background-color: rgb(255, 36, 36);
+    border-radius: 7px;
+    color: white;
+    transition: 0.4s;
+}
+
+main .search .search-input span:hover {
+    border-radius: 14px;
+}
+
+main .search .search-input span ion-icon {
+    transition: 0.4s;
+}
+
+main .search .search-input span:hover ion-icon {
+    transform: scale(1.3);
+}
+
+main .items-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 84%;
+    padding: 40px 8%;
+    background-color: rgb(197, 197, 197);
+}
+
+main .items-list .item {
+    position: relative;
+    height: 320px;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    cursor: pointer;
+}
+
+main .items-list .item img {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 5%;
+}
+
+main .items-list .item p {
+    margin: 0;
+}
+
+main .items-list .item .item-info {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .items-list .item .item-info .name {
+    font-size: 16px;
+}
+
+main .items-list .item .item-info .time {
+    font-size: 12px;
+}
+
+main .items-list .item .item-price {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+main .items-list .item .item-price .price {
+    font-size: 18px;
+}
+
+main .items-list .item .item-price ion-icon {
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+main .items-list .item .item-price ion-icon:hover {
+    color: rgb(255, 36, 36);
+    transform: scale(1.4);
+}
