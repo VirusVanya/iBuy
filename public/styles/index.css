@@ -14,8 +14,8 @@ main .search * {
     align-items: center;
 }
 
-main .search .catalog {
-    padding: 2px 15px;
+main .search .catalog, .filter {
+    padding: 15px 30px;
     gap: 5px;
     background-color: rgb(255, 36, 36);
     border-radius: 10px;
@@ -25,7 +25,7 @@ main .search .catalog {
     transition: 0.4s;
 }
 
-main .search .catalog:hover {
+main .search .catalog:hover, .filter:hover {
     border-radius: 20px;
 }
 
@@ -89,7 +89,7 @@ main .items-list {
     justify-content: center;
     width: 84%;
     padding: 40px 8%;
-    background-color: rgb(197, 197, 197);
+    background: rgb(0, 0, 0, 0.08);
 }
 
 main .items-list .item {
@@ -98,9 +98,17 @@ main .items-list .item {
     width: 250px;
     padding: 10px;
     display: flex;
+    border-radius: 5px;
     flex-direction: column;
     background-color: white;
+    transition: 0.4s;
     cursor: pointer;
+}
+
+main .items-list .item:hover {
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
 }
 
 main .items-list .item img {

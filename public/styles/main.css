@@ -143,6 +143,7 @@ main {
     position: relative;
     top: 100px;
     min-height: 600px;
+    margin-bottom: 40px;
 }
 
 /* Footer */
@@ -196,6 +197,27 @@ footer .footer-block .social-links {
 
 footer .footer-block .social-links a {
     font-size: 26px;
+    transition: 0.4s;
+}
+
+footer .footer-block .social-links #facebook:hover {
+    color: #3b5998;
+}
+
+footer .footer-block .social-links #instagram:hover {
+    color: #C13584;
+}
+
+footer .footer-block .social-links #linkedin:hover {
+    color: #0e76a8;
+}
+
+footer .footer-block .social-links #twitter:hover {
+    color: #1DA1F2;
+}
+
+footer .footer-block .social-links #github:hover {
+    color: #6e5494;
 }
 
 footer .footer-block .footer-input {

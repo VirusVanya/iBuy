@@ -8,19 +8,21 @@
     <%- include('blocks/header') -%>
     <main>
         <div class="post-block">
-            <div class="post-image">
+            <div class="post-image" style="width: 600px;">
                 <img src="data:image/<%=image.img.contentType %>;base64,<%=image.img.data.toString('base64') %>" alt="">
             </div>
-            <div class="post-main">
+            <div class="post-main" style="width: 500px;">
                 <div class="post-info">
                     <p class="name"><%= item.name %></p>
                     <p class="price">$ <%= item.price %></p>
+                    <hr class="border">
                     <p class="description-title">Description</p>
                     <p class="description"><%= item.description %></p>
                     <div class="more-info">
                         <p class="location"><%= item.location %></p>
-                        <p class="date"><%= item.createdAt.toLocaleDateString() %></p>
+                        <p class="date"><%= item.createdAt.getHours() %>:<%= item.createdAt.getMinutes() %> (<%= item.createdAt.toLocaleDateString() %>)</p>
                     </div>
+                    <hr class="border">
                 </div>
                 <div class="post-owner">
                     <img src="/images/avatar.png" alt="">
@@ -39,5 +41,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="/scripts/main.js"></script>
+    <script src="/scripts/post.js"></script>
 </body>
 </html>

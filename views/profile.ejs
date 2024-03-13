@@ -8,41 +8,30 @@
     <%- include('blocks/header') -%>
     <main>
         <div class="profile">
-            <div class="options">
-                <p class="title">Manage My Account</p>
-                <a href="#">My Profile</a>
-                <a href="#">Address Book</a>
-                <a href="#">My Payment Options</a>
-                <p class="title">My Orders</p>
-                <a href="#">My Returns</a>
-                <a href="#">My Cancellations</a>
-            </div>
             <div class="profile-block">
                 <div class="picture-block">
                     <img src="/images/avatar.png" alt="" class="picture">
-                    <span>Upload Photo</span>
+                    <p><%= user.name %></p>
                 </div>
                 <div class="data">
-                    <div class="data-block">
-                        <p class="title">Your Name</p>
-                        <div>
-                            <p><%= name %></p>
-                            <span>Edit</span>
-                        </div>
-                    </div>
+                    <p class="block-title">Contacts</p>
                     <div class="data-block">
                         <p class="title">Phone Number</p>
                         <div>
                             <p>+91 49652845732</p>
-                            <span>Edit</span>
                         </div>
                     </div>
                     <div class="data-block">
                         <p class="title">Email</p>
                         <div>
-                            <p><%= email %></p>
-                            <span>Edit</span>
+                            <p><%= user.email %></p>
                         </div>
+                    </div>
+                </div>
+                <div class="data">
+                    <p class="block-title">About <%= user.name %></p>
+                    <div class="data-block">
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
             </div>

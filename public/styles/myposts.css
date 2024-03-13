@@ -10,16 +10,21 @@ main .posts-nav span {
     padding: 15px 30px;
     background-color: rgb(255, 36, 36);
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     gap: 5px;
     font-size: 16px;
     font-weight: 500;
+    transition: 0.4s;
+}
+
+main .posts-nav span:hover {
+    border-radius: 20px;
 }
 
 main .posts-nav span ion-icon {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 main .items-list {
@@ -30,7 +35,7 @@ main .items-list {
     justify-content: center;
     width: 84%;
     padding: 40px 8%;
-    background-color: rgb(197, 197, 197);
+    background: rgb(0, 0, 0, 0.08);
 }
 
 main .items-list .item {
@@ -39,9 +44,17 @@ main .items-list .item {
     width: 250px;
     padding: 10px;
     display: flex;
+    border-radius: 5px;
     flex-direction: column;
     background-color: white;
+    transition: 0.4s;
     cursor: pointer;
+}
+
+main .items-list .item:hover {
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.3);
 }
 
 main .items-list .item img {
@@ -88,4 +101,10 @@ main .items-list .item .item-price .price {
 
 main .items-list .item .item-price ion-icon {
     font-size: 24px;
+    transition: 0.4s;
+}
+
+main .items-list .item .item-price ion-icon:hover {
+    color: rgb(255, 36, 36);
+    transform: scale(1.4);
 }

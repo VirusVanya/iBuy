@@ -12,10 +12,10 @@
     </nav>
     <div class="header-buttons">
         <ion-icon name="heart-outline"></ion-icon>
-        <img src="/images/<%= signedIn == false ? 'user.jpg' : 'avatar.png' %>" class="profile-icon" alt="">
+        <img src="/images/<%= !user ? 'user.jpg' : 'avatar.png' %>" class="profile-icon" alt="">
     </div>
     <div class="profile-options" style="display: none;">
-        <% if(signedIn) { %>
+        <% if(user) { %>
             <a href="/profile" id="first-link"><ion-icon name="person-outline"></ion-icon>My Account</a>
             <a href="#"><ion-icon name="bag-handle-outline"></ion-icon>My Purchases</a>
             <a href="/myposts"><ion-icon name="shirt-outline"></ion-icon>My Ads</a>
